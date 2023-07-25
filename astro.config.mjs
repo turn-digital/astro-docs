@@ -3,8 +3,8 @@ import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
-  // site: 'https://turn.github.io',
-  // base: '/astro-docs',
+  site: "https://turn.github.io",
+  base: "/astro-docs",
   integrations: [
     starlight({
       title: "My Docs",
