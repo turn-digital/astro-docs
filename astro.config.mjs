@@ -7,26 +7,107 @@ export default defineConfig({
   base: "/astro-docs",
   integrations: [
     starlight({
-      title: "My Docs",
+      title: "Piekļūstamības vadlīnijas",
+      customCss: ["./src/styles/custom.css"],
+      locales: {
+        root: {
+          label: "Latvian",
+          lang: "lv-LV",
+        },
+      },
       social: {
         github: "https://github.com/withastro/starlight",
       },
       sidebar: [
         {
-          label: "Home page",
-          link: "/",
+          label: "Izmantoto terminu skaidrojums",
+          link: "/izmantoto-terminu-skaidrojums",
         },
         {
-          label: "Hello World",
-          link: "/hello-world",
+          label: "Ievads",
+          link: "/ievads",
         },
         {
-          label: "Nested pages",
+          label: "Timeklvietnu-novertejuma-metodologija",
           items: [
-            { label: "Inner page 1", link: "/inner-page/inner-page-1" },
-            { label: "Inner page 2", link: "/inner-page/inner-page-2" },
-            { label: "Inner page 3", link: "/inner-page/inner-page-3" },
+            {
+              label: "Tīmekļvietņu novērtējuma metodoloģija",
+              link: "/timeklvietnu-novertejuma-metodologija/timeklvietnu-novertejuma-metodologija",
+            },
+            {
+              label: "Novērtējuma veikšanai nepieciešamie rīki",
+              link: "/timeklvietnu-novertejuma-metodologija/novertejuma-veiksanai-nepieciesamie-riki",
+            },
+            {
+              label: "Novērtējuma veikšanas kārtība",
+              link: "/timeklvietnu-novertejuma-metodologija/novertejuma-veiksanas-kartiba",
+            },
           ],
+        },
+        {
+          label: "Timeklvietnu-novertejuma-instrukcija",
+          items: [
+            {
+              label: "Tīmekļvietņu novērtējuma instrukcija",
+              link: "/timeklvietnu-novertejuma-instrukcija/timeklvietnu-novertejuma-instrukcija",
+            },
+            {
+              label: "Galvenā navigācija",
+              link: "/timeklvietnu-novertejuma-instrukcija/galvena-navigacija",
+            },
+            {
+              label: "Pamatstruktūras pārbaude",
+              link: "/timeklvietnu-novertejuma-instrukcija/pamatstrukturas-parbaude",
+            },
+            {
+              label: "Tastatūras piekļuve un vizuālais fokuss",
+              link: "/timeklvietnu-novertejuma-instrukcija/tastaturas-piekluve-un-vizualais-fokuss",
+            },
+            {
+              label: "Formu lauki un kļūdu paziņojumi",
+              link: "/timeklvietnu-novertejuma-instrukcija/formu-lauki-un-kludu-pazinojumi",
+            },
+            {
+              label: "Attēlu tekstuālā alternatīva",
+              link: "/timeklvietnu-novertejuma-instrukcija/attelu-tekstuala-alternativa",
+            },
+            {
+              label: "Virsraksti",
+              link: "/timeklvietnu-novertejuma-instrukcija/virsraksti",
+            },
+            {
+              label: "Krāsu kontrasti",
+              link: "/timeklvietnu-novertejuma-instrukcija/krasu-kontrasti",
+            },
+            {
+              label: "Teksta izmēra tālummaiņa",
+              link: "/timeklvietnu-novertejuma-instrukcija/teksta-izmera-talummaina",
+            },
+            {
+              label: "Lapu nosaukumi",
+              link: "/timeklvietnu-novertejuma-instrukcija/lapu-nosaukumi",
+            },
+            {
+              label: "Saturs, kas kustas, mirgo un zibsnī",
+              link: "/timeklvietnu-novertejuma-instrukcija/saturs-kas-kustas-mirgo-un-zibsni",
+            },
+            {
+              label: "Multimediju (audio, video) satura alternatīvas",
+              link: "/timeklvietnu-novertejuma-instrukcija/multimediju-audio-video-satura-alternativas",
+            },
+          ],
+        },
+        {
+          label: "Turpmākie soļi",
+          link: "/turpmakie-soli",
+        },
+        {
+          label: "Papildu resursi",
+          link: "/papildu-resursi",
+        },
+        {
+          label: "Pielikums",
+          link: "/pielikums",
         },
       ],
     }),
