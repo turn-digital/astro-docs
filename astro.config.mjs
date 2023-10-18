@@ -8,6 +8,16 @@ export default defineConfig({
     starlight({
       title: "Piekļūstamības vadlīnijas",
       customCss: ["./src/styles/custom.css"],
+      head: [
+        {
+          tag: "script",
+          attrs: {
+            src: "https://my_plausible_domain/js/script.js",
+            "data-domain": "vadlinijas.pieklustamiba.lv",
+            defer: true,
+          },
+        },
+      ],
       locales: {
         root: {
           label: "Latvian",
@@ -15,16 +25,12 @@ export default defineConfig({
         },
       },
       social: {
-        github: "https://github.com/withastro/starlight",
+        github: "https://github.com/turn-digital/vadlinijas.pieklustamiba",
       },
       sidebar: [
         {
-          label: "Izmantoto terminu skaidrojums",
-          link: "/izmantoto-terminu-skaidrojums",
-        },
-        {
           label: "Ievads",
-          link: "/ievads",
+          link: "/",
         },
         {
           label: "Timeklvietnu-novertejuma-metodologija",
@@ -107,6 +113,10 @@ export default defineConfig({
         {
           label: "Pielikums",
           link: "/pielikums",
+        },
+        {
+          label: "Izmantoto terminu skaidrojums",
+          link: "/izmantoto-terminu-skaidrojums",
         },
       ],
     }),

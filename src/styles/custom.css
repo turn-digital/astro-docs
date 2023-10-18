@@ -97,9 +97,9 @@
   --sl-nav-pad-x: 1rem;
   --sl-nav-pad-y: 0.75rem;
   --sl-mobile-toc-height: 3rem;
-  --sl-sidebar-width: 19rem;
+  --sl-sidebar-width: 18.75rem;
   --sl-sidebar-pad-x: 1rem;
-  --sl-content-width: 70rem;
+  --sl-content-width: 45rem;
   --sl-content-pad-x: 1rem;
   --sl-menu-button-size: 2rem;
   --sl-nav-gap: var(--sl-content-pad-x);
@@ -183,6 +183,6 @@
   :root {
     --sl-content-pad-x: 1.5rem;
     --sl-mobile-toc-height: 0rem;
-    --sl-sidebar-width: 25rem;
+    --sl-sidebar-width: 23rem;
   }
 }
