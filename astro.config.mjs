@@ -12,7 +12,7 @@ export default defineConfig({
         {
           tag: "script",
           attrs: {
-            src: "https://my_plausible_domain/js/script.js",
+            src: "https://plausible.io/js/script.js",
             "data-domain": "vadlinijas.pieklustamiba.lv",
             defer: true,
           },
