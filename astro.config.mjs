@@ -3,7 +3,7 @@ import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://turn.github.io",
+  site: "https://vadlinijas.pieklustamiba.lv/",
   integrations: [
     starlight({
       title: "Piekļūstamības vadlīnijas",
